@@ -59,4 +59,4 @@ jobs:
           app-name: 'oot-demo'
           slot-name: 'Production'
           package: .
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_9E007580438A4C86B2FF4E4563B0BFB3 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_75E69316F54A4C6AA0A25CB4A6157B3B }}
