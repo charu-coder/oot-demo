@@ -3,18 +3,17 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import { PublicClientApplication } from "@azure/msal-browser"
 
-const pca = new PublicClientApplication({
-  auth: {
-    clientId: "475aaaa6-b5f3-46f7-ad46-5482b0dfa6a0",
-    authority: "https://login.windows.net/02511c97-883d-44d0-97e4-f726cd3a676b/oauth2/token",
-    redirectUri: "http://localhost:3000"
-  }
-})
+// const pca = new PublicClientApplication({
+//   auth: {
+//     clientId: "475aaaa6-b5f3-46f7-ad46-5482b0dfa6a0",
+//     authority: "https://login.windows.net/02511c97-883d-44d0-97e4-f726cd3a676b/oauth2/token",
+//     redirectUri: "http://localhost:3000"
+//   }
+// })
 ReactDOM.render(
   <React.StrictMode>
-    <App msalInstance={pca}/>
+    <App />
   </React.StrictMode>,
   document.getElementById("root")
 );

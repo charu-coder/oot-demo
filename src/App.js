@@ -6,7 +6,6 @@ import { useEffect, useState } from "react";
 import Workspace from "./components/pages/Workspace/Workspace";
 import Tiles from "./components/pages/Tiles/Tiles";
 import Report from "./components/pages/Report/Report";
-import { MsalProvider } from "@azure/msal-react";
 import { getAllReports, isTokenExpired, login } from "./utils";
 
 const Dashboard = () => <h1>Dashboard</h1>;
@@ -19,7 +18,7 @@ const Courses2 = () => <h1>Content/Courses 2</h1>;
 const Videos2 = () => <h1>Content/Videos 2</h1>;
 const Design2 = () => <h1>Design 2</h1>;
 
-function App({ msalInstance }) {
+function App( ) {
   const [inactive, setInactive] = useState(false);
   const [isChecked, setIsChecked] = useState(false);
   const [selectedWorkspace, setSelWorkspace] = useState(
@@ -42,7 +41,7 @@ function App({ msalInstance }) {
 
   console.log("from app workspace", allReportsData)
   return (
-    <MsalProvider instance={msalInstance}>
+    // <MsalProvider instance={msalInstance}>
       <div className="App">
         <Router>
           <SideMenu
@@ -146,7 +145,7 @@ function App({ msalInstance }) {
           </div>
         </Router>
       </div>
-    </MsalProvider>
+    // </MsalProvider>
   );
 }
 

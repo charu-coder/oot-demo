@@ -5,7 +5,6 @@ import user from "../assets/logo/user.png";
 import MenuItem from "./MenuItem";
 import { reportsDataDummy } from "../datasets/reports";
 import { getAllReports, login, menuItemsTest } from "../utils";
-import { useMsal } from "@azure/msal-react";
 
 /**
  * @author
