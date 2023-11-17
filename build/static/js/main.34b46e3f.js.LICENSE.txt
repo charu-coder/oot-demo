@@ -50,12 +50,6 @@ object-assign
 
 /*! ./visualDescriptor */
 
-/*! @azure/msal-browser v3.5.0 2023-11-07 */
-
-/*! @azure/msal-common v14.4.0 2023-11-07 */
-
-/*! @azure/msal-react v2.0.7 2023-11-07 */
-
 /*! http-post-message */
 
 /*! http-post-message v0.2.3 | (c) 2016 Microsoft Corporation MIT */
