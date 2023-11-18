@@ -57,5 +57,6 @@ jobs:
         uses: azure/webapps-deploy@v2
         with:
           app-name: 'oot-demo'
-          package: ./dist/oot-demo
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_9E007580438A4C86B2FF4E4563B0BFB3 }}
+          slot-name: 'Production'
+          package: .
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_A1F6EA422B654453849AA4B5B1444D73 }}
